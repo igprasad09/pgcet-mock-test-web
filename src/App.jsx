@@ -11,7 +11,21 @@ import TestEngine from './components/TestEngine';
 import Dashboard from './components/Dashboard'; 
 import Leaderboard from './components/Leaderboard';
 import TestDetails from './components/TestDetails';
+import { Helmet } from "react-helmet-async";
 
+<Helmet>
+  <title>PGCET MCA Mock Tests</title>
+
+  <meta
+    name="description"
+    content="Free Karnataka PGCET MCA mock tests with leaderboard and analytics."
+  />
+
+  <meta
+    name="keywords"
+    content="PGCET MCA, mock test, Karnataka MCA entrance, MCA preparation"
+  />
+</Helmet>
 export default function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
